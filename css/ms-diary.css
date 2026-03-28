@@ -1,0 +1,175 @@
+/*mobiles*/
+@media screen and (max-width: 960px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .to-top {
+        display: grid;
+        width: 70px;
+        height: 70px;
+        background-color: lightyellow;
+        border: solid 2px gray;
+        border-radius: 50%;
+        text-align: center;
+        align-items: center;
+
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 999;
+    }
+
+    .top-text {
+        font-size: 0.8rem;
+        font-weight: normal;
+        color: black;
+        text-shadow: 0.1rem 0.1rem 2px gray;
+    }
+
+    /*header*/
+    .header {
+        width: 100%;
+        text-align: center;
+    }
+
+    .ltd {
+        font-size: 1.3rem;
+        line-height: 3.0rem;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: black;
+        text-shadow: 0.1rem 0.1rem 2px gray;
+    }
+
+    .name {
+        font-size: 1.4rem;
+        line-height: 3.0rem;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: black;
+        text-shadow: 0.1rem 0.1rem 2px gray;
+    }
+
+    .phrase {
+        font-size: 0.8rem;
+        line-height: 2.0rem;
+        font-weight: bold;
+        font-family: serif;
+        color: black;
+        text-shadow: 0.1rem 0.1rem 2px orangered;
+    }
+
+    .during-line {
+        width: 40%;
+        height: 2px;
+        border-radius: 10px;
+        background-color: navy;
+        margin: 2.0rem 5% 2.0rem auto;
+    }
+
+    /*diary*/
+    table {
+        width: 95%;
+        margin: 0 0 2.0rem auto;
+    }
+
+    .new-tag {
+        width: 8%;
+        text-align: left;
+    }
+
+    .tag-text {
+        font-size: 0.8rem;
+        line-height: 2.5rem;
+        font-weight: normal;
+        color: orangered;
+        text-shadow:
+            0 0 0.10rem yellow,
+            0 0 0.15rem yellow,
+            0 0 0.80rem yellow,
+            0 0 1.00rem yellow;
+    }
+
+    .year-cell {
+        width: 8%;
+        text-align: center;
+    }
+
+    .year {
+        font-size: 0.8rem;
+        line-height: 2.5rem;
+        font-weight: normal;
+        color: black;
+        text-shadow: 0.1rem 0.1rem 2px gray;
+    }
+
+    .month-cell {
+        width: 8%;
+        text-align: center;
+    }
+
+    .month {
+        font-size: 0.8rem;
+        line-height: 2.5rem;
+        font-weight: normal;
+        color: black;
+        text-shadow: 0.1rem 0.1rem 2px gray;
+    }
+
+    .day-cell {
+        width: 8%;
+        text-align: center;
+    }
+
+    .day {
+        font-size: 0.8rem;
+        line-height: 2.5rem;
+        font-weight: normal;
+        color: black;
+        text-shadow: 0.1rem 0.1rem 2px gray;
+    }
+
+    .void-space {
+        width: 8%;
+    }
+
+    .article-cell {
+        width: 60%;
+        text-align: left;
+    }
+
+    .article {
+        font-size: 0.8rem;
+        line-height: 2.5rem;
+        font-weight: normal;
+        color: black;
+        text-shadow: 0.1rem 0.1rem 2px lightseagreen;
+    }
+
+    /*footer*/
+    .footer {
+        width: 100%;
+        text-align: center;
+        background-color: lightgray;
+        padding: 1.6rem 0;
+    }
+
+    .footer-text {
+        font-size: 0.6rem;
+        line-height: 1.2rem;
+        font-weight: normal;
+        font-family: sans-serif;
+        color: black;
+    }
+
+    .only-df {
+        display: none;
+    }
+}
