@@ -1,0 +1,345 @@
+/*default*/
+@media screen and (min-width: 961px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /*header*/
+    .header {
+        width: 100%;
+        position: sticky;
+        background: linear-gradient(to bottom, white 80%, transparent 100%);
+        top: 0;
+    }
+
+    .header-table {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .name-cell {
+        width: 55%;
+        text-align: left;
+    }
+
+    .ltd {
+        font-size: 1.3rem;
+        line-height: 2.5rem;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: black;
+        text-shadow: 0.1rem 0.1rem 2px gray;
+    }
+
+    .name {
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: black;
+        text-shadow: 0.1rem 0.1rem 2px gray;
+    }
+
+    .sub-cell {
+        width: 15%;
+        text-align: center;
+    }
+
+    .to-diary {
+        font-size: 1.0rem;
+        line-height: 2.5rem;
+        font-weight: normal;
+        font-family: sans-serif;
+        color: black;
+        text-shadow: 0.1rem 0.1rem 6px orangered;
+    }
+
+    .to-about {
+        font-size: 1.0rem;
+        line-height: 2.5rem;
+        font-weight: normal;
+        font-family: sans-serif;
+        color: black;
+        text-shadow: 0.1rem 0.1rem 6px blue;
+    }
+
+    .to-contact {
+        font-size: 1.0rem;
+        line-height: 2.5rem;
+        font-weight: normal;
+        font-family: sans-serif;
+        color: black;
+        text-shadow: 0.1rem 0.1rem 6px green;
+    }
+
+    .during-line {
+        width: 40%;
+        height: 4px;
+        background-color: darkblue;
+        border-radius: 20px;
+        margin: 1.0rem 5% 1.0rem auto;
+    }
+
+    /*topic*/
+    .topic-img-area-ms {
+        display: none;
+    }
+
+    .topic-entire {
+        width: 80%;
+        display: flex;
+        margin: 2.0rem auto;
+    }
+
+    .topic-text-area-1 {
+        width: 55%;
+        text-align: center;
+        background-color: aliceblue;
+        border-radius: 50%;
+    }
+
+    .topic-text-area-2 {
+        width: 55%;
+        text-align: center;
+        background-color: aliceblue;
+        border-radius: 50%;
+    }
+
+    .topic-text-1 {
+        font-size: 1.2rem;
+        line-height: 4.0rem;
+        font-weight: bold;
+        font-family: serif;
+        color: maroon;
+    }
+
+    .topic-text-2 {
+        font-size: 1.2rem;
+        line-height: 3.5rem;
+        font-weight: bold;
+        font-family: serif;
+        color: maroon;
+    }
+
+    .topic-img-area-1 {
+        width: 45%;
+        height: 16rem;
+    }
+
+    .topic-img-area-2 {
+        width: 45%;
+        height: 18rem;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: scale-down;
+    }
+
+    /*diary*/
+    #diary {
+        width: 50%;
+        margin: 3.0rem auto;
+    }
+
+    .diary-table-head {
+        width: 100%;
+        text-align: center;
+    }
+
+    .diary-table-head-text {
+        font-size: 3.0rem;
+        line-height: 8.0rem;
+        font-weight: normal;
+        font-family: sans-serif;
+        color: orangered;
+        text-shadow: 0.4rem 0.3rem 4px gray;
+    }
+
+    .diary-table-date {
+        width: 40%;
+        text-align: center;
+    }
+
+    .diary-table-date-text {
+        font-size: 1.0rem;
+        line-height: 2.5rem;
+        font-weight: normal;
+        font-family: sans-serif;
+        color: black;
+        text-shadow: 0.1rem 0.1rem 2px gray;
+    }
+
+    .diary-table-article {
+        width: 60%;
+        text-align: left;
+    }
+
+    .diary-table-article-text {
+        font-size: 1.0rem;
+        line-height: 2.5rem;
+        font-weight: normal;
+        font-family: sans-serif;
+        color: black;
+        text-shadow: 0.1rem 0.1rem 2px lightgray;
+        padding-left: 10%;
+    }
+
+    /* 日記複数追加時に開放
+    .to-diary-html {
+        width: 100%;
+        text-align: right;
+    }
+
+    .to-diary-html-text {
+        font-size: 0.8rem;
+        line-height: 2.0rem;
+        font-weight: normal;
+        font-family: sans-serif;
+        color: black;
+        text-shadow: 0.1rem 0.1rem 2px lightgray;
+    }
+    */
+
+    /*about*/
+    #about {
+        width: 60%;
+        margin: 3.0rem auto;
+    }
+
+    .about-table-head {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-table-head-text {
+        font-size: 3.0rem;
+        line-height: 8.0rem;
+        font-weight: normal;
+        font-family: sans-serif;
+        color: blue;
+        text-shadow: 0.4rem 0.3rem 4px gray;
+    }
+
+    .about-table-cont-head {
+        width: 40%;
+        text-align: center;
+    }
+
+    .about-table-cont-head-text {
+        font-size: 1.0rem;
+        line-height: 2.5rem;
+        font-weight: normal;
+        font-family: sans-serif;
+        color: black;
+        text-shadow: 0.1rem 0.1rem 2px gray;
+    }
+
+    .about-table-cont-cont {
+        width: 60%;
+        text-align: left;
+    }
+
+    .about-table-cont-cont-text {
+        font-size: 1.0rem;
+        line-height: 2.5rem;
+        font-weight: normal;
+        font-family: sans-serif;
+        color: black;
+        text-shadow: 0.1rem 0.1rem 2px lightgray;
+        padding-left: 10%;
+    }
+
+    /*contact*/
+    #contact {
+        width: 50%;
+        margin: 3.0rem auto;
+    }
+
+    .contact-table-head {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-table-head-text {
+        font-size: 3.0rem;
+        line-height: 8.0rem;
+        font-weight: normal;
+        font-family: sans-serif;
+        color: green;
+        text-shadow: 0.4rem 0.3rem 4px gray;
+    }
+
+    .contact-table-cont-head {
+        width: 45%;
+        text-align: center;
+    }
+
+    .contact-table-cont-head-text {
+        font-size: 1.0rem;
+        line-height: 2.5rem;
+        font-weight: normal;
+        font-family: sans-serif;
+        color: black;
+        text-shadow: 0.1rem 0.1rem 2px gray;
+    }
+
+    .contact-table-cont-cont {
+        width: 55%;
+        text-align: left;
+    }
+
+    .contact-table-cont-cont-text {
+        font-size: 1.0rem;
+        line-height: 2.5rem;
+        font-weight: normal;
+        font-family: sans-serif;
+        color: black;
+        text-shadow: 0.1rem 0.1rem 2px lightgray;
+        padding-left: 10%;
+    }
+
+    .contact-keyfraze {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto 3.0rem auto;
+        padding: 2.0rem 0;
+        border-radius: 50%;
+        background-color: aliceblue;
+    }
+
+    .contact-keyfraze-text {
+        font-size: 1.0rem;
+        line-height: 2.2rem;
+        font-weight: normal;
+        font-family: sans-serif;
+        color: black;
+    }
+
+    /*footer*/
+    .footer {
+        width: 100%;
+        text-align: center;
+        padding: 2.0rem 0;
+        background-color: lightgray;
+    }
+
+    .footer-text {
+        font-size: 0.8rem;
+        line-height: 1.8rem;
+        font-weight: normal;
+        font-family: sans-serif;
+        color: maroon;
+    }
+
+    .only-ms {
+        display: none;
+    }
+}
