@@ -35,6 +35,15 @@
         animation-delay: 0.6s;
     }
 
+    .fusuma-obi {
+        position: absolute;
+        width: 100%;
+        height: 100px;
+        background-color: midnightblue;
+        transform: translateY(-50%);
+        top: 50%;
+    }
+
     .left-pull {
         width: 50px;
         height: 50px;
@@ -122,7 +131,7 @@
     /* header */
     .header {
         width: 100%;
-        height: 50px;
+        height: 80px;
         position: sticky;
         top: 0;
         background: linear-gradient(to bottom, white 1%, transparent 100%);
@@ -142,14 +151,6 @@
     }
 
     .ltd {
-        font-size: 1.2rem;
-        font-weight: bold;
-        font-family: sans-serif;
-        color: black;
-        text-shadow: 0.1rem 0.1rem 2px lightgray;
-    }
-
-    .name {
         font-size: 1.3rem;
         font-weight: bold;
         font-family: sans-serif;
@@ -157,15 +158,24 @@
         text-shadow: 0.1rem 0.1rem 2px lightgray;
     }
 
+    .name {
+        font-size: 1.4rem;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: black;
+        text-shadow: 0.1rem 0.1rem 2px lightgray;
+    }
+
     .sub-cell {
-        width: 10%;
+        width: 20%;
         height: 100%;
     }
 
     .sub-div {
-        width: 100%;
-        height: 100%;
+        width: 50%;
+        height: 60%;
         border-radius: 100px;
+        margin: auto;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -176,7 +186,7 @@
     }
 
     .to-about {
-        font-size: 0.9rem;
+        font-size: 1.0rem;
         font-weight: bold;
         font-family: sans-serif;
         color: blue;
@@ -184,7 +194,7 @@
     }
 
     .to-diary {
-        font-size: 0.9rem;
+        font-size: 1.0rem;
         font-weight: bold;
         font-family: sans-serif;
         color: orangered;
@@ -192,7 +202,7 @@
     }
 
     .to-contact {
-        font-size: 0.9rem;
+        font-size: 1.0rem;
         font-weight: bold;
         font-family: sans-serif;
         color: green;
