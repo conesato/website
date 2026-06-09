@@ -104,7 +104,7 @@
         height: 35px;
         position: sticky;
         top: 0;
-        background: linear-gradient(to bottom, white 80%, transparent 100%);
+        background: linear-gradient(to bottom, white 1%, transparent 100%);
         z-index: 1;
     }
 
