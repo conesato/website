@@ -1,5 +1,5 @@
 /* default */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
 
     html,
     body {
@@ -31,7 +31,7 @@
         background-color: lightyellow;
         border: 8px solid black;
         box-sizing: border-box;
-        animation: openLeft 1.0s linear forwards;
+        animation: openLeft 1.0s ease-in forwards;
         animation-delay: 0.6s;
     }
 
@@ -65,7 +65,7 @@
         background-color: lightyellow;
         border: 8px solid black;
         box-sizing: border-box;
-        animation: openRight 1.0s linear forwards;
+        animation: openRight 1.0s ease-in forwards;
         animation-delay: 0.6s;
     }
 
@@ -131,82 +131,46 @@
     /* header */
     .header {
         width: 100%;
-        height: 80px;
-        position: sticky;
-        top: 0;
-        background: linear-gradient(to bottom, white 1%, transparent 100%);
-        z-index: 1;
+        padding: 2.0rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        text-align: center;
     }
 
-    .header-table {
-        width: 90%;
-        height: 100%;
-        margin: 0 auto;
-    }
-
-    .name-cell {
-        width: auto;
-        height: 100%;
-        text-align: left;
+    .header-name-space {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        gap: 0.5rem;
     }
 
     .ltd {
-        font-size: 1.3rem;
-        font-weight: bold;
-        font-family: sans-serif;
-        color: black;
-        text-shadow: 0.1rem 0.1rem 2px lightgray;
-    }
-
-    .name {
         font-size: 1.4rem;
         font-weight: bold;
         font-family: sans-serif;
         color: black;
-        text-shadow: 0.1rem 0.1rem 2px lightgray;
+        text-shadow: 0.2rem 0.1rem 4px gray;
     }
 
-    .sub-cell {
-        width: 20%;
-        height: 100%;
-    }
-
-    .sub-div {
-        width: 50%;
-        height: 60%;
-        border-radius: 100px;
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .sub-div:hover {
-        background-color: aliceblue;
-    }
-
-    .to-about {
-        font-size: 1.0rem;
+    .name {
+        font-size: 1.5rem;
         font-weight: bold;
         font-family: sans-serif;
-        color: blue;
-        text-shadow: 0.1rem 0.1rem 2px lightgray;
+        color: black;
+        text-shadow: 0.2rem 0.1rem 4px gray;
     }
 
-    .to-diary {
+    .header-tp-text {
         font-size: 1.0rem;
         font-weight: bold;
-        font-family: sans-serif;
-        color: orangered;
-        text-shadow: 0.1rem 0.1rem 2px lightgray;
-    }
-
-    .to-contact {
-        font-size: 1.0rem;
-        font-weight: bold;
-        font-family: sans-serif;
-        color: green;
-        text-shadow: 0.1rem 0.1rem 2px lightgray;
+        font-family: serif;
+        color: black;
+        text-shadow: 0.1rem 0.1rem 2px lightseagreen;
     }
 
     /* topic */
@@ -216,7 +180,7 @@
         flex-direction: column;
         gap: 1.0rem;
         margin: 0 auto;
-        padding: 2.0rem 0;
+        padding: 0 0 2.0rem 0;
     }
 
     .topic-mobiles {
@@ -273,7 +237,7 @@
     }
 
     /* about */
-    #about {
+    .about {
         width: 1000px;
         margin: 0 auto;
         padding: 2.0rem 0;
@@ -326,7 +290,7 @@
     }
 
     /* diary */
-    #diary {
+    .diary {
         width: 1000px;
         margin: 0 auto;
         padding: 2.0rem 0;
@@ -390,7 +354,7 @@
     }
 
     /* contact */
-    #contact {
+    .contact {
         width: 1000px;
         margin: 0 auto;
         padding: 2.0rem 0;
