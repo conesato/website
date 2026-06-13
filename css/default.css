@@ -104,28 +104,113 @@
     }
 
     /* mouse stalker */
-    #stalker {
+    #coneta {
         position: fixed;
-        width: 32px;
-        height: 32px;
-        background-image: url(../img/favicon.png);
-        /* 画像全体をストーカーの枠内に綺麗に収める */
-        background-size: contain;
-        /* 余白部分に画像をリピートさせない */
-        /* background-repeat: no-repeat; */
-        /* マウスの先端に画像の中心を指定 */
-        background-position: center;
-        border-radius: 50%;
-        top: -0.1rem;
-        left: -0.1rem;
-        pointer-events: none;
+        top: -80px;
+        left: -80px;
+        width: 200px;
+        height: 200px;
+        transform: scale(0.25);
         transition: transform 0.4s ease-out, opacity 0.5s ease;
+        pointer-events: none;
         z-index: 2;
         opacity: 0;
     }
 
-    #stalker.active {
+    #coneta.active {
         opacity: 1;
+    }
+
+    .ear {
+        position: absolute;
+        top: 0;
+        width: 0;
+        height: 0;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-bottom: 60px solid black;
+    }
+
+    .ear::before {
+        content: "";
+        position: absolute;
+        top: 30px;
+        left: -10px;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 20px solid gray;
+    }
+
+    .ear-left {
+        left: 20px;
+        transform: rotate(-20deg);
+    }
+
+    .ear-right {
+        right: 20px;
+        transform: rotate(20deg);
+    }
+
+    .face {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 80%;
+        background-color: lightgray;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .face::before {
+        content: "";
+        position: absolute;
+        top: -70px;
+        left: 80px;
+        width: 200px;
+        height: 160px;
+        background-color: black;
+        border-radius: 50%;
+    }
+
+    .eye {
+        position: absolute;
+        top: 50px;
+        width: 20px;
+        height: 40px;
+        border: 2px solid darkgray;
+        background-color: yellow;
+        border-radius: 50%;
+    }
+
+    .eye::before {
+        content: "";
+        position: absolute;
+        top: 9px;
+        left: 8px;
+        width: 4px;
+        height: 22px;
+        background-color: black;
+        border-radius: 50%;
+    }
+
+    .eye-left {
+        left: 50px;
+    }
+
+    .eye-right {
+        right: 50px;
+    }
+
+    .nose {
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 100px;
+        left: 92px;
+        border-top: 8px solid deeppink;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        opacity: 0.4;
     }
 
     /* header */
@@ -417,6 +502,77 @@
         font-weight: bold;
         font-family: serif;
         color: maroon;
+    }
+
+    /* bottom topic */
+    .bottom-topic {
+        width: 1000px;
+        margin: 0 auto;
+        padding: 2.0rem 0;
+    }
+
+    .btmtopic-title-text {
+        font-size: 2.5rem;
+        line-height: 6.0rem;
+        font-weight: normal;
+        font-family: sans-serif;
+        color: yellowgreen;
+        text-shadow: 0.3rem 0.2rem 3px lightgray;
+        letter-spacing: 0.2rem;
+    }
+
+    .btmtopic-cont-area {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btmtopic-cont-row {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 10px 0;
+    }
+
+    .annoy-head-cell {
+        width: 40%;
+        text-align: left;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 80px;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    .annoy-head-text {
+        font-size: 1.0rem;
+        line-height: 2.0rem;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: gray;
+    }
+
+    .annoy-cont-cell {
+        width: auto;
+        text-align: left;
+        padding-left: 20px;
+        box-sizing: border-box;
+    }
+
+    .annoy-cont-text {
+        font-size: 1.0rem;
+        line-height: 2.0rem;
+        font-weight: normal;
+        font-family: sans-serif;
+        color: black;
+    }
+
+    .annoy-during-line {
+        width: 90%;
+        height: 2px;
+        background-color: lightgray;
+        border-radius: 100px;
+        margin: 0 auto;
     }
 
     /* footer */
