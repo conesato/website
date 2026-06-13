@@ -9,7 +9,7 @@ fusumaLeft.addEventListener('animationend', () => {
 
 
 // マウスストーカー
-const stalk = document.getElementById('stalker');
+const stalker = document.getElementById('coneta');
 
 // ストーカーアニメーション用
 // let lastX = 0;
@@ -17,13 +17,13 @@ const stalk = document.getElementById('stalker');
 document.addEventListener('mousemove', (e) => {
     const x = e.clientX;
     const y = e.clientY;
-    stalk.style.transform = `translate(${x}px, ${y}px)`;
+    stalker.style.transform = `translate(${x}px, ${y}px) scale(0.25)`;
 });
 
 document.addEventListener('mouseenter', () => {
-    stalk.classList.add('active');
+    stalker.classList.add('active');
 });
 
 document.addEventListener('mouseleave', () => {
-    stalk.classList.remove('active');
+    stalker.classList.remove('active');
 });
