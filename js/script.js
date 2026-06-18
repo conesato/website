@@ -1,11 +1,10 @@
 // アニメーション終了時操作
-const container = document.querySelector('.animation-container');
-const fusumaLeft = document.querySelector('.fusuma-left');
-const fusumaRight = document.querySelector('.fusuma-right');
+// const container = document.querySelector('.fusuma-container');
+// const fusumaLeft = document.querySelector('.fusuma-left');
 
-fusumaLeft.addEventListener('animationend', () => {
-    container.style.display = 'none';
-});
+// fusumaLeft.addEventListener('animationend', () => {
+//     container.style.display = 'none';
+// });
 
 
 // マウスストーカー
