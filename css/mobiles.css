@@ -382,6 +382,7 @@
     .each-title-space {
         width: 100%;
         text-align: center;
+        padding: 0 0 16px 0;
     }
 
     .about-title-text {
